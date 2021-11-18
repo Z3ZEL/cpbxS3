@@ -1,0 +1,6 @@
+graph "e" {
+
+  "A"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "B"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "C"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+}

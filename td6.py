@@ -36,7 +36,13 @@ def marquerAccessible(G,s):
         if(not(estMarqueSommet(v))):
             marquerSommet(v)
             marquerAccessible(G,v)
-          
+
+#En utlisant la fonction précédente Version : Adrien
+def marquerAccessibles2(G,s):
+    toutDemarquer(G)
+    marquerSommet(s)
+    while sommetAccessible(G) != None :
+        marquerSommet(sommetAccessible(G))
 
 
 

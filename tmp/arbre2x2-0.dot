@@ -1,0 +1,16 @@
+graph "arbre2x2" {
+
+  "s0" -- "s1";
+  "s0" -- "s4";
+  "s0"  [style = filled, peripheries = 1, fillcolor = green, fontcolor = black, color = black];
+  "s1" -- "s2";
+  "s1" -- "s3";
+  "s1"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s2"  [style = filled, peripheries = 1, fillcolor = green, fontcolor = black, color = black];
+  "s3"  [style = filled, peripheries = 1, fillcolor = green, fontcolor = black, color = black];
+  "s4" -- "s5";
+  "s4" -- "s6";
+  "s4"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s5"  [style = filled, peripheries = 1, fillcolor = green, fontcolor = black, color = black];
+  "s6"  [style = filled, peripheries = 1, fillcolor = green, fontcolor = black, color = black];
+}

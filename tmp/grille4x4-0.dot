@@ -1,0 +1,43 @@
+graph "grille4x4" {
+
+  "s0" -- "s1";
+  "s0" -- "s4";
+  "s0"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "s1" -- "s2";
+  "s1" -- "s5";
+  "s1"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "s2" -- "s3";
+  "s2" -- "s6";
+  "s2"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "s3" -- "s7";
+  "s3"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "s4" -- "s5";
+  "s4" -- "s8";
+  "s4"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "s5" -- "s6";
+  "s5" -- "s9";
+  "s5"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "s6" -- "s7";
+  "s6" -- "s10";
+  "s6"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "s7" -- "s11";
+  "s7"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "s8" -- "s9";
+  "s8" -- "s12";
+  "s8"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "s9" -- "s10";
+  "s9" -- "s13";
+  "s9"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "s10" -- "s11";
+  "s10" -- "s14";
+  "s10"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "s11" -- "s15";
+  "s11"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "s12" -- "s13";
+  "s12"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "s13" -- "s14";
+  "s13"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "s14" -- "s15";
+  "s14"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "s15"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+}

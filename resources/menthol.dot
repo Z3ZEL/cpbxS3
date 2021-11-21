@@ -1,0 +1,47 @@
+graph g {
+	"C0" [ fillcolor=black,fontcolor=white,style=filled ];
+	"C11" [ fillcolor=black,fontcolor=white,style=filled ];
+	"C12" [ fillcolor=black,fontcolor=white,style=filled ];
+	"C13" [ fillcolor=black,fontcolor=white,style=filled ];
+	"C14" [ fillcolor=black,fontcolor=white,style=filled ];
+	"C15" [ fillcolor=black,fontcolor=white,style=filled ];
+	"C16" [ fillcolor=black,fontcolor=white,style=filled ];
+	"C2" [ fillcolor=black,fontcolor=white,style=filled ];
+	"C31" [ fillcolor=black,fontcolor=white,style=filled ];
+	"C32" [ fillcolor=black,fontcolor=white,style=filled ];
+	"O" [ fillcolor=red,style=filled ];
+	"C0" -- "C11";
+	"C11" -- "C12";
+	"C12" -- "C13";
+	"C13" -- "C14";
+	"C14" -- "C15";
+	"C15" -- "C16";
+	"C16" -- "C11";
+	"O" -- "C13";
+	"O" -- "H0";
+	"C14" -- "C2";
+	"C2" -- "C31";
+	"C2" -- "C32";
+
+	"C0" -- "H01";
+	"C0" -- "H02";
+	"C0" -- "H03";
+
+	"C11" -- "H11";
+	"C12" -- "H121";
+	"C12" -- "H122";
+	"C13" -- "H13";
+	"C14" -- "H14";
+	"C15" -- "H151";
+	"C15" -- "H152";
+	"C16" -- "H161";
+	"C16" -- "H162";
+
+	"C2" -- "H2";
+	"C31" -- "H311";
+	"C31" -- "H312";
+	"C31" -- "H313";
+	"C32" -- "H321";
+	"C32" -- "H322";
+	"C32" -- "H323";
+}

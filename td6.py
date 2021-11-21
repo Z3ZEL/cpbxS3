@@ -124,3 +124,72 @@ def chemin_aux(G,s,t):
     return [v] 
 
 # print(chemin(G,sommetNom(G,"France"),sommetNom(G,"Hongrie")))
+
+
+def bienColorie(G):
+    sommets = listeSommets(G)
+    for s in sommets:
+        c = couleurSommet(s)
+        voisins = listeVoisins(s)
+        for v in voisins:
+            cv = couleurSommet(v)
+            if(cv == c):
+                return False
+    return True
+
+# print(bienColorie(ouvrirGraphe("resources/menthol.dot")))
+
+def effacerCouleurs(G):
+    sommets = listeSommets(G)
+    for s in sommets:
+        colorierSommet(s,"white")
+
+def sommetColoriable(G):
+    sommets = listeSommets(G)
+    for s in sommets:
+        if(couleurSommet(s) == "white"):
+            continue
+        voisins = listeVoisins(s)
+        for v in voisins:
+            if(couleurSommet(v) == "white"):
+                return v
+    return None
+
+def monoCouleurVoisins(s):
+    voisins = listeVoisins(s)
+    color = "none"
+    for v in voisins:
+        vColor = couleurSommet(v)
+        if(vColor != "white"):
+            if(color == "none"):
+                color = vColor
+            elif(color != vColor):
+                return None
+    #ne devrait pas arriver dans le cas de la fonction deuxColoration mais dans le cas général cela peut arriver
+    if(color != "none"):
+        return color
+    else:
+        return None
+
+def deuxColoration(G,c1,c2):
+    effacerCouleurs(G)
+    sommets = listeSommets(G)
+    sInit = sommets[0]
+    colorierSommet(sInit,c1)
+    t = sommets[0]
+    while(t != None):
+        t = sommetColoriable(G)
+        if(t == None):
+            break
+        color = monoCouleurVoisins(t)
+        if(color == c1):
+            colorierSommet(t,c2)
+        else: 
+            colorierSommet(t,c1)
+        
+    return bienColorie(G)
+
+# L = [construireGrille(4,4),construireArbre(3,3),construireBipartiComplet(2,5),ouvrirGraphe("resources/petersen.dot"),ouvrirGraphe("resources/cube.dot"),ouvrirGraphe("resources/octaedre.dot"),ouvrirGraphe("resources/dodecaedre.dot")]
+# for g in L:
+#     print(nomGraphe(g) + " : " + str(deuxColoration(g,"red","blue")))
+#     # dessiner(g)

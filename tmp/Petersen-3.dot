@@ -1,0 +1,30 @@
+graph "Petersen" {
+start=23;
+edge[len=2];
+
+  "A" -- "B";
+  "A" -- "E";
+  "A" -- "a" [len=1];
+  "A"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "B" -- "C";
+  "B" -- "b" [len=1];
+  "B"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "E" -- "D";
+  "E" -- "e" [len=1];
+  "E"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "a" -- "c";
+  "a" -- "d";
+  "a"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "C" -- "D";
+  "C" -- "c" [len=1];
+  "C"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "b" -- "e";
+  "b" -- "d";
+  "b"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "D" -- "d" [len=1];
+  "D"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "c" -- "e";
+  "c"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "d"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "e"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+}

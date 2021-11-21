@@ -1,0 +1,20 @@
+graph "K2x5" {
+edge [len = 2]
+  "s0" -- "s2";
+  "s0" -- "s3";
+  "s0" -- "s4";
+  "s0" -- "s5";
+  "s0" -- "s6";
+  "s0"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "s2" -- "s1";
+  "s2"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "s3" -- "s1";
+  "s3"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "s4" -- "s1";
+  "s4"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "s5" -- "s1";
+  "s5"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "s6" -- "s1";
+  "s6"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "s1"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+}

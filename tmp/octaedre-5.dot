@@ -1,0 +1,22 @@
+graph "octaedre" {
+edge[len=2];
+
+  "A" -- "B";
+  "A" -- "D";
+  "A" -- "E";
+  "A" -- "F";
+  "A"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "B" -- "C";
+  "B" -- "E";
+  "B" -- "F";
+  "B"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "D" -- "C";
+  "D" -- "E";
+  "D" -- "F";
+  "D"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "E" -- "C";
+  "E"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "F" -- "C";
+  "F"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "C"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+}

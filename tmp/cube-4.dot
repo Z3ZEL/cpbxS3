@@ -1,0 +1,24 @@
+graph "cube" {
+edge[len=2];
+
+  "A" -- "B";
+  "A" -- "D";
+  "A" -- "a";
+  "A"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "B" -- "C";
+  "B" -- "b";
+  "B"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "D" -- "C";
+  "D" -- "d";
+  "D"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "a" -- "b";
+  "a" -- "d";
+  "a"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "C" -- "c";
+  "C"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "b" -- "c";
+  "b"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+  "c" -- "d";
+  "c"  [style = filled, peripheries = 1, fillcolor = blue, fontcolor = black, color = black];
+  "d"  [style = filled, peripheries = 1, fillcolor = red, fontcolor = black, color = black];
+}

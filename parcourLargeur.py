@@ -10,6 +10,20 @@ def effacerCouleurs(G):
     sommets = listeSommets(G)
     for s in sommets:
         colorierSommet(s,"white")
+def Visual(G,s):
+    c1 = '\033[92m'
+    c2 = '\033[0m'
+    c3 = '\033[91m'
+    (peres,distance) = parcoursEnLargeur(G,s)
+    for sommet in peres:
+        pere = None
+        if(peres[sommet] == 'NIL'):
+            pere = 'NIL'
+        else:
+            pere = nomSommet(peres[sommet])
+        print(f"{c1}{nomSommet(sommet)} : {c2} \n Père : {c3}{pere}{c2} \n Distance : {c3}{distance[sommet]}{c2}")
+
+
 
 def parcoursEnLargeur(G,s):
     peres =  {}
@@ -114,3 +128,6 @@ def colorierParPalette(G,s,p):
 
 # G = construireGrille(7,7)
 # colorierParPalette(G,listeSommets(G)[24],paletteNumero(2)) 
+
+
+

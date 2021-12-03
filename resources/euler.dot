@@ -1,0 +1,18 @@
+graph "Euler" {
+rankdir=LR ratio=.5 node[shape=box style=rounded]
+  "A" ;
+    "A" -- "B";
+    "B";
+    "C";
+    "D";
+    "E";
+    "F";
+  "B" -- "D";
+  "D" -- "E";
+  "E" -- "F";
+  "F" -- "C";
+  "C" -- "A";
+  "B" -- "C";
+  "B" -- "E";
+  "E" -- "C";
+}

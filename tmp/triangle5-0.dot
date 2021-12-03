@@ -1,0 +1,48 @@
+graph "triangle5" {
+ratio=1.155
+  "s0" -- "s1" [style = bold, color = orange];
+  "s0" -- "s2" [style = bold, color = orange];
+  "s0"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s1" -- "s2" [style = bold, color = orange];
+  "s1" -- "s3" [style = bold, color = orange];
+  "s1" -- "s4" [style = bold, color = orange];
+  "s1"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s2" -- "s4" [style = bold, color = orange];
+  "s2" -- "s5" [style = bold, color = orange];
+  "s2"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s3" -- "s4" [style = bold, color = orange];
+  "s3" -- "s6" [style = bold, color = orange];
+  "s3" -- "s7" [style = bold, color = orange];
+  "s3"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s4" -- "s5" [style = bold, color = orange];
+  "s4" -- "s7" [style = bold, color = orange];
+  "s4" -- "s8" [style = bold, color = orange];
+  "s4"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s5" -- "s8" [style = bold, color = orange];
+  "s5" -- "s9" [style = bold, color = orange];
+  "s5"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s6" -- "s7" [style = bold, color = orange];
+  "s6" -- "s10" [style = bold, color = orange];
+  "s6" -- "s11" [style = bold, color = orange];
+  "s6"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s7" -- "s8" [style = bold, color = orange];
+  "s7" -- "s11" [style = bold, color = orange];
+  "s7" -- "s12" [style = bold, color = orange];
+  "s7"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s8" -- "s9" [style = bold, color = orange];
+  "s8" -- "s12" [style = bold, color = orange];
+  "s8" -- "s13" [style = bold, color = orange];
+  "s8"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s9" -- "s13" [style = bold, color = orange];
+  "s9" -- "s14" [style = bold, color = orange];
+  "s9"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s10" -- "s11" [style = bold, color = orange];
+  "s10"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s11" -- "s12" [style = bold, color = orange];
+  "s11"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s12" -- "s13" [style = bold, color = orange];
+  "s12"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s13" -- "s14" [style = bold, color = orange];
+  "s13"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "s14"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+}

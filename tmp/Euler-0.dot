@@ -1,0 +1,21 @@
+graph "Euler" {
+rankdir=LR;
+ratio=.5;
+node[shape=box, style=rounded];
+
+  "A" -- "B" [style = bold, color = orange];
+  "A" -- "C" [style = bold, color = orange];
+  "A"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "B" -- "D" [style = bold, color = orange];
+  "B" -- "C" [style = bold, color = orange];
+  "B" -- "E" [style = bold, color = orange];
+  "B"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "C" -- "F" [style = bold, color = orange];
+  "C" -- "E" [style = bold, color = orange];
+  "C"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "D" -- "E" [style = bold, color = orange];
+  "D"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "E" -- "F" [style = bold, color = orange];
+  "E"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+  "F"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
+}

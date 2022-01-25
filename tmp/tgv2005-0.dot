@@ -7,7 +7,7 @@ graph "tgv2005" {
   "Lille" -- "Toulouse" [label="8h20"];
   "Lille" -- "Marseille" [label="4h30"];
   "Lille" -- "Montpellier" [label="4h40"];
-  "Lille"  [style = filled, peripheries = 2, fillcolor = white, fontcolor = black, color = Black];
+  "Lille"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
   "Paris" -- "Nantes" [label="2h00"];
   "Paris" -- "Lyon" [label="1h55"];
   "Paris" -- "Bordeaux" [label="2h55"];
@@ -28,5 +28,5 @@ graph "tgv2005" {
   "Toulouse"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
   "Marseille"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
   "Montpellier"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
-  "Strasbourg"  [style = filled, peripheries = 2, fillcolor = white, fontcolor = black, color = Black];
+  "Strasbourg"  [style = filled, peripheries = 1, fillcolor = white, fontcolor = black, color = black];
 }

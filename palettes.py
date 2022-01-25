@@ -28,7 +28,7 @@ Accent8 = ['"#7fc97f"', '"#beaed4"', '"#fdc086"', '"#ffff99"',
 _palettes = [Accent8, Dark28, Set28, Set19, Set312]
 
 def paletteNumero (n):
-    n = n % len (_palettes)
+    n = n % len (_palettes) 
     return _palettes[n]
 
 print ('Cette  application  utilise  des  schémas  de  couleurs\n\
